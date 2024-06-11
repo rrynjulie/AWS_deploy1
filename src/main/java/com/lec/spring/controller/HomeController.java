@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 @RestController
 public class HomeController {
-    @GetMapping("/aws/vq")
+    @GetMapping("/aws/v1")
     public String hello(@RequestParam(defaultValue = "1") Integer num){
         if (num == 1){  // info 로그
             log.info("/aws/v1 이 호출. info 로그 #################################");
